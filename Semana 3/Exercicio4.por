@@ -1,27 +1,25 @@
 programa
-{	
-	real largura, comprimento, resultado
-
+{
+	inclua biblioteca Calendario --> data
+	real valorMax, emprestimoMax, prestacao
+	real salario, valorEmprestimo
 	
 	funcao inicio()
 	{
-		escreva("Digite a largura do terreno: ")
-		leia(largura)
-		escreva("Digite o comprimento do terreno: ")
-		leia(comprimento)
+		escreva("Digite o valor do seu salário: ")
+		leia(salario)
+		escreva("\nDigite o valor do Empréstimo que você deseja: ")
+		leia(valorEmprestimo)
+		escreva("\nDigite quantas prestações você deseja: ")
+		leia(prestacao)
+		valorMax = (30.00 / 100.00) * salario 
 
-		resultado = (largura*comprimento)
-
-		se(resultado <= 99.9){
-			escreva("Terreno Popular.")
+		emprestimoMax = valorEmprestimo / prestacao
+		se (valorMax < emprestimoMax) {
+			escreva("Valor não autorizado.")
 			}
-
-		senao se(resultado <= 499.9){
-			escreva("Terreno Master.")
-			}
-
-		senao {
-			escreva("Terreno VIP.")
+		senao{
+			escreva("Valor autorizado.")
 			}
 		
 		
@@ -32,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 401; 
+ * @POSICAO-CURSOR = 521; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

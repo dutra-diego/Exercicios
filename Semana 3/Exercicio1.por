@@ -1,28 +1,17 @@
 programa
 {
-		real notaAluno
+	inclua biblioteca Calendario --> data
+	inteiro anoNasc
+	
 	funcao inicio()
 	{
-		escreva("Qual foi sua nota: ")
-		leia(notaAluno)
-
-		se(notaAluno <= 2.99)
-		{
-			escreva("conceito E")
-			}
-		senao se(notaAluno <= 5.99)
-		{
-			escreva("conceito D")
-			}
-		senao se(notaAluno <= 7.99)
-		{
-			escreva("conceito C")
-			}
-		senao se(notaAluno <= 9.99){
-			escreva("conceito B")
+		escreva("Digite seu Ano de Nascimento: ")
+		leia(anoNasc)
+		se (data.ano_atual() - anoNasc >= 16) {
+			escreva("Você está elegível a votar.")
 			}
 		senao{
-			escreva("conceito A")
+			escreva("Você não está elegível a votar.")
 			}
 		
 		
@@ -33,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 381; 
+ * @POSICAO-CURSOR = 212; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
