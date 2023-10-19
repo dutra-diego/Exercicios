@@ -19,7 +19,7 @@ programa
 		{
 			escreva("conceito C")
 			}
-		senao se(notaAluno <= 8.99){
+		senao se(notaAluno <= 9.99){
 			escreva("conceito B")
 			}
 		senao{
