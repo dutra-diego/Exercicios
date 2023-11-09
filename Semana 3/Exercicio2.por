@@ -1,6 +1,7 @@
 programa
 {
-		real notaAluno
+	
+	real notaAluno
 	funcao inicio()
 	{
 		escreva("Qual foi sua nota: ")
